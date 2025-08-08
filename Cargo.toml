@@ -2,6 +2,9 @@
 name = "hacker5news"
 version = "0.1.0"
 edition = "2024"
+authors = ["Mateo Lafalce <mateolafalce@protonmail.com>"]
+description = "A simple web application built with Rust and Axum that fetches and displays the top 5 articles from Hacker News. For all of us who get anxious seeing so many news but don't have the time to read everything."
+repository = "https://github.com/mateolafalce/hacker5news"
 
 [dependencies]
 axum = "0.8.4"
