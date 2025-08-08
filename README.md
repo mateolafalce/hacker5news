@@ -2,8 +2,7 @@
 
 # Hacker News Top 5 Articles
 
-
-<img src="public/preview.png" alt="Preview" style="height: 192px; width: 192px;" />
+<img src="public/preview.png" alt="Preview" />
 
 </div>
 
