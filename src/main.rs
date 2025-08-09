@@ -135,7 +135,7 @@ async fn index_handler(State(_): State<Arc<AppState>>) -> impl IntoResponse {
                 let title = &article.title;
                 let url = article.url.as_deref().unwrap_or("#");
                 format!(
-                    "<li><a href=\"{}\" target=\"_blank\">{}</a></li>",
+                    "<li><a href=\"{}\">{}</a></li>",
                     url, title
                 )
             })
