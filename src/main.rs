@@ -23,24 +23,7 @@ async fn main() {
         .unwrap();
 
     println!("Listening on http://localhost:{}", PORT);
-
-    open_browser(&format!("http://localhost:{}", PORT));
-
     axum::serve(listener, app).await.unwrap();
-}
-
-fn open_browser(url: &str) {
-    let result = match OS {
-        "linux" | "macos" => Command::new("xdg-open").arg(url).spawn(),
-        "windows" => Command::new("cmd").args(["/C", "start", url]).spawn(),
-        _ => {
-            eprintln!("Cannot automatically open the browser on this OS.");
-            return;
-        }
-    };
-    if let Err(e) = result {
-        eprintln!("Failed to open the browser: {}", e);
-    }
 }
 
 #[derive(Clone, Default)]
