@@ -17,21 +17,13 @@ git clone https://github.com/mateolafalce/hacker5news.git
 cd hacker5news
 ```
 
-2. **Install the application using Cargo:**
+2. **Compile & Run**
 
 ```bash
-cargo install --path .
+cargo run --release
 ```
 
-3. **Run the application:**
-
-```bash
-hacker5news
-```
-
-4. **The application will automatically open in your default browser.**  
-
-If it doesn't, open your browser and go to:
+3. **Look at localhost**
 
 ```
 http://localhost:3000
