@@ -150,10 +150,7 @@ async fn index_handler(State(_): State<Arc<AppState>>) -> impl IntoResponse {
             .map(|article| {
                 let title = &article.title;
                 let url = article.url.as_deref().unwrap_or("#");
-                format!(
-                    "<li><a href=\"{}\">{}</a></li>",
-                    url, title
-                )
+                format!("<li><a href=\"{}\">{}</a></li>", url, title)
             })
             .collect::<Vec<_>>()
             .join("")
