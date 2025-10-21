@@ -10,6 +10,29 @@ A simple web application built with Rust and Axum that fetches and displays the 
 
 ## Installation
 
+### Option 1: Using Docker
+
+1. **Clone this repository:**
+
+```bash
+git clone https://github.com/mateolafalce/hacker5news.git
+cd hacker5news
+```
+
+2. **Run with Docker Compose:**
+
+```bash
+docker compose up
+```
+
+3. **Access the application:**
+
+```
+http://localhost:3000
+```
+
+### Option 2: Build from Source
+
 1. **Clone this repository:**
 
 ```bash
